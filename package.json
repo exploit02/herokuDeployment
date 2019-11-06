@@ -2,9 +2,13 @@
   "name": "server",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "10.15.1"
+  },
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "dependencies": {
     "aadhaar-validator": "^1.1.0",
