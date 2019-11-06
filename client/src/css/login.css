@@ -1,0 +1,41 @@
+body {
+    background-color: #EBFAF5 !important;
+  }
+
+.login_row_margin{
+    margin-top: 60px;
+  }
+
+  table, th, tr, td{
+    border: 2px solid #E1E4E4;
+  }
+
+  .radio_input{
+    margin-top: 25px;
+  }
+
+  .loader{
+    margin-top: 185px
+  }
+
+  #label{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    
+  }
+
+  h5{
+    color:red;
+  }
+
+  .dashboard_filter{
+    margin-top: -7px !important;
+  }
+
+  .dashboard_card{
+    height: 90px !important;
+  }
+
+  .react-datepicker-wrapper{
+    display: block !important
+  }
