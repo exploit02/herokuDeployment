@@ -53,34 +53,34 @@ const ApiService = {
 
 export const CandidateService = {
   getCandidate() {
-    return ApiService.get( 'http://localhost:3001/candidates' )
+    return ApiService.get( 'https://herokuappdeploytest.herokuapp.com/candidates' )
   },
 
   selectedCandidate(candidateID) {
-    return ApiService.get( 'http://localhost:3001/candidates/'+candidateID)
+    return ApiService.get( 'https://herokuappdeploytest.herokuapp.com/candidates/'+candidateID)
   },
 
   checkAadhar(aadharNumber) {
-    return ApiService.get( 'http://localhost:3001/candidates/byaadhar/'+aadharNumber)
+    return ApiService.get( 'https://herokuappdeploytest.herokuapp.com/candidates/byaadhar/'+aadharNumber)
   },
 
   addCandidate(candidate) {
-    return ApiService.post( 'http://localhost:3001/candidates',candidate)
+    return ApiService.post( 'https://herokuappdeploytest.herokuapp.com/candidates',candidate)
   },
 
   updateCandidate(candidate) {
-    return ApiService.patch( 'http://localhost:3001/candidates/'+candidate['_id'], candidate)
+    return ApiService.patch( 'https://herokuappdeploytest.herokuapp.com/candidates/'+candidate['_id'], candidate)
   },
 
   candidateCountByGender(todate, fromdate, state, city) {
-    return ApiService.get( 'http://localhost:3001/candidates/bygender', todate, fromdate, state, city)
+    return ApiService.get( 'https://herokuappdeploytest.herokuapp.com/candidates/bygender', todate, fromdate, state, city)
   },
 
   candidateCountByStatus(todate, fromdate, state, city) {
-    return ApiService.get( 'http://localhost:3001/candidates/bystatus', todate, fromdate, state, city)
+    return ApiService.get( 'https://herokuappdeploytest.herokuapp.com/candidates/bystatus', todate, fromdate, state, city)
   },
 
   candidateCountByAgegroup(todate, fromdate, state, city) {
-    return ApiService.get( 'http://localhost:3001/candidates/byagegroup', todate, fromdate, state, city)
+    return ApiService.get( 'https://herokuappdeploytest.herokuapp.com/candidates/byagegroup', todate, fromdate, state, city)
   }
 }
