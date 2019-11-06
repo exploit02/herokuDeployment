@@ -50,7 +50,7 @@ export const UserService = {
   },
 
   login(userCredentials) {
-    return ApiService.post( 'http://localhost:3001/users/login', userCredentials)
+    return ApiService.post( 'https://herokuappdeploytest.herokuapp.com/users/login', userCredentials)
   },
 
   logout(token) {
